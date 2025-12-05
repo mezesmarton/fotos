@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munkáim - Képgaléria</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="js/gallery.js" defer></script>
+</head>
+<body>
+    <header>
+    <nav class="container">
+        <div class="logo-container">
+            <a href="index.html"><img src="images/logo.png" alt="Logo" class="nav-logo"></a>
+            <a href="index.html"><span class="logo-text">Mézes Márton Photography</span></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Főoldal</a></li>
+            <li><a href="portfolio.html">Portfólió</a></li>
+            <li><a href="services.html">Szolgáltatások</a></li>
+            <li><a href="calculator.html">Kalkulátor</a></li>
+            <li><a href="about.html">Rólam</a></li>
+            <li><a href="contact.html">Kapcsolat</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="portfolio" class="container">
+            <h2>Portfólió</h2>
+
+            <div id="filter-buttons" class="button-group">
+                <button data-category="all" class="active">Összes</button>
+                <button data-category="portrait">Portré</button>
+                <button data-category="event">Esemény</button>
+                <button data-category="family">Család</button>
+                <button data-category="building">Épület</button>
+                <button data-category="landscape">Tájkép</button>
+            </div>
+
+            <div id="image-container">
+                <img src="images/gallery/portre1.jpg" alt="Portré fotó" class="gallery-item" data-category="portrait">
+                <img src="images/gallery/esemeny1.jpg" alt="Esemény fotó" class="gallery-item" data-category="event">
+                <img src="images/gallery/csalad1.jpeg" alt="Családi fotó" class="gallery-item" data-category="family">
+                <img src="images/gallery/taj1.jpg" alt="Táj fotó" class="gallery-item" data-category="landscape">
+                <img src="images/gallery/epulet1.jpeg" alt="Épület fotó" class="gallery-item" data-category="building">
+                <img src="images/gallery/taj2.jpg" alt="Táj fotó" class="gallery-item" data-category="landscape">
+                <img src="images/gallery/portre2.jpg" alt="Portré fotó" class="gallery-item" data-category="portrait">
+                <img src="images/gallery/portre3.jpg" alt="Portré fotó" class="gallery-item" data-category="portrait">
+                <img src="images/gallery/esemeny2.jpg" alt="Esemény fotó" class="gallery-item" data-category="event">
+                <img src="images/gallery/esemeny3.jpg" alt="Esemény fotó" class="gallery-item" data-category="event">
+                <img src="images/gallery/esemeny4.jpg" alt="Esemény fotó" class="gallery-item" data-category="event">
+                <img src="images/gallery/esemeny5.jpg" alt="Esemény fotó" class="gallery-item" data-category="event">
+                <img src="images/gallery/esemeny6.jpg" alt="Esemény fotó" class="gallery-item" data-category="event">
+                <img src="images/gallery/esemeny7.jpg" alt="Esemény fotó" class="gallery-item" data-category="event">
+                <img src="images/gallery/esemeny8.jpg" alt="Esemény fotó" class="gallery-item" data-category="event">
+                <img src="images/gallery/esemeny9.jpg" alt="Esemény fotó" class="gallery-item" data-category="event">
+                <img src="images/gallery/esemeny10.jpg" alt="Esemény fotó" class="gallery-item" data-category="event">
+                <img src="images/gallery/esemeny11.jpg" alt="Esemény fotó" class="gallery-item" data-category="event">
+                <img src="images/gallery/esemeny12.jpg" alt="Esemény fotó" class="gallery-item" data-category="event">
+                <img src="images/gallery/esemeny13.jpg" alt="Esemény fotó" class="gallery-item" data-category="event">
+                <img src="images/gallery/csalad2.jpeg" alt="Családi fotó" class="gallery-item" data-category="family">
+                <img src="images/gallery/csalad3.jpeg" alt="Családi fotó" class="gallery-item" data-category="family">
+                <img src="images/gallery/csalad4.jpeg" alt="Családi fotó" class="gallery-item" data-category="family">
+                <img src="images/gallery/epulet2.jpeg" alt="Épület fotó" class="gallery-item" data-category="building">
+                <img src="images/gallery/epulet3.jpeg" alt="Épület fotó" class="gallery-item" data-category="building">
+                <img src="images/gallery/epulet4.jpeg" alt="Épület fotó" class="gallery-item" data-category="building">
+                <img src="images/gallery/epulet5.jpeg" alt="Épület fotó" class="gallery-item" data-category="building">
+                <img src="images/gallery/epulet6.jpeg" alt="Épület fotó" class="gallery-item" data-category="building">
+                <img src="images/gallery/epulet7.jpeg" alt="Épület fotó" class="gallery-item" data-category="building">
+                <img src="images/gallery/epulet8.jpeg" alt="Épület fotó" class="gallery-item" data-category="building">
+                <img src="images/gallery/epulet9.jpeg" alt="Épület fotó" class="gallery-item" data-category="building">
+                <img src="images/gallery/taj3.jpg" alt="Táj fotó" class="gallery-item" data-category="landscape">
+                <img src="images/gallery/taj4.jpg" alt="Táj fotó" class="gallery-item" data-category="landscape">
+                <img src="images/gallery/taj5.jpg" alt="Táj fotó" class="gallery-item" data-category="landscape">
+                <img src="images/gallery/taj6.jpg" alt="Táj fotó" class="gallery-item" data-category="landscape">
+                <img src="images/gallery/taj7.jpg" alt="Táj fotó" class="gallery-item" data-category="landscape">
+                <img src="images/gallery/taj8.jpg" alt="Táj fotó" class="gallery-item" data-category="landscape">
+                <img src="images/gallery/taj9.jpg" alt="Táj fotó" class="gallery-item" data-category="landscape">
+                <img src="images/gallery/taj10.jpg" alt="Táj fotó" class="gallery-item" data-category="landscape">
+            </div>
+        </section>
+    </main>
+
+    <footer> <p>&copy; 2025 Mézes Márton Photography. Minden jog fenntartva.</p></footer>
+
+    <div id="lightbox" class="hidden">
+        <button id="close-btn" aria-label="Bezárás">X</button>
+        <img id="lightbox-img" src="" alt="Nagyított kép">
+        <button id="prev-btn" aria-label="Előző kép">◀</button>
+        <button id="next-btn" aria-label="Következő kép">▶</button>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+A készítő neve: Mézes Márton
+
+A működő weboldal URL címe: 
+
+A weboldal témájának rövid, 2 mondatos leírása:
+A weboldalam a saját fotós portfóliómat mutatja be, melyen lehetőség van megtekinteni korábbi munkáimat. Emellett a szolgáltatások megnézésére, fotózási díj kikalkulálására és a kapcsolat felvételére is lehetőséget nyújt, illetve elolvasható a bemutatkozásom a Rólam fül alatt.
+
+A saját JavaScript kód helyének és működésének leírása:
+A js mappában találhatók a JavaScript kódok
+js/calculator.js: A fotózási díj kikalkulálására szolgáló JavaScript kód. Megadott alap szolgáltatás, majd extra opciók kiválasztásával számolja ki a várható költségét a fotózásnak.
+js/contact.js: A kapcsolati űrlap beküldésére szolgáló validációkat tartalmazza.
+js/gallery.js: A képek témakörönkénti szűrését, illetve egy interaktív fotóalbumot biztosít, melyet nagy méretben tud végignézni az oldalra látogató.
+js/hero-carousel.js: Egy rövid kód, mely automatikusan váltja a kezdőlapon a háttérképet 8 másodpercenként.
+
+A használt egyedi fonttípus és annak helye: A weboldalon a Poppins betűtípust használtam. Linkje: https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap
+
+Minden felhasznált külső forrás (kódrészlet, segítség) pontos megjelölése:
+A HTML, CSS és JavaScript kódok alapvető vázát mesterséges intelligencia generálta, a többi kódrészlet és egyéb tartalmakal való feltöltése mind saját munka.
+A logó és a favicon AI generált, az összes többi felhasznált kép saját készítésű. 

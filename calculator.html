@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotózási Díj Kalkulátor</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="js/calculator.js" defer></script>
+</head>
+<body>
+    <header>
+    <nav class="container">
+        <div class="logo-container">
+            <a href="index.html"><img src="images/logo.png" alt="Logo" class="nav-logo"></a>
+            <a href="index.html"><span class="logo-text">Mézes Márton Photography</span></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Főoldal</a></li>
+            <li><a href="portfolio.html">Portfólió</a></li>
+            <li><a href="services.html">Szolgáltatások</a></li>
+            <li><a href="calculator.html">Kalkulátor</a></li>
+            <li><a href="about.html">Rólam</a></li>
+            <li><a href="contact.html">Kapcsolat</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="price-calculator" class="container">
+            <h2>Fotózási Díj Kalkulátor</h2>
+            <div id="calculator-interface">
+                <div class="form-group">
+                    <label for="baseService">Alap szolgáltatás:</label>
+                    <select id="baseService">
+                        <option value="50000">Portré fotózás (50.000 Ft)</option>
+                        <option value="80000">Családi fotózás (80.000 Ft)</option>
+                        <option value="100000">Esemény fotózás (100.000 Ft)</option>
+                        <option value="120000">Esküvő fotózás (120.000 Ft)</option>
+                        
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="hours">Fotózás hosszúsága (óra):</label>
+                    <input type="number" id="hours" value="2" min="2" max="10"> 
+                    <span class="info-text">További órák díja: +15.000 Ft/óra</span>
+                </div>
+                
+                <div class="form-group">
+                    <label>Kiegészítő opciók:</label>
+                    
+                    <div class="checkbox-group">
+                        
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="retouch" value="20000">
+                            <label for="retouch">Extra Retusálás (20.000 Ft)</label>
+                        </div>
+                        
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="printing" value="15000">
+                            <label for="printing">Prémium Nyomtatás (15.000 Ft)</label>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div id="calculation-result">
+                    <h3>Becsült összköltség:</h3>
+                    <p id="totalPrice" class="price-display">0 Ft</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer> <p>&copy; 2025 Mézes Márton Photography. Minden jog fenntartva.</p></footer>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapcsolatfelvétel és ajánlatkérés</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="js/contact.js" defer></script>
+</head>
+<body>
+    <header>
+    <nav class="container">
+        <div class="logo-container">
+            <a href="index.html"><img src="images/logo.png" alt="Logo" class="nav-logo"></a>
+            <a href="index.html"><span class="logo-text">Mézes Márton Photography</span></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Főoldal</a></li>
+            <li><a href="portfolio.html">Portfólió</a></li>
+            <li><a href="services.html">Szolgáltatások</a></li>
+            <li><a href="calculator.html">Kalkulátor</a></li>
+            <li><a href="about.html">Rólam</a></li>
+            <li><a href="contact.html">Kapcsolat</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact-form" class="container">
+            <h2>Kérj ajánlatot!</h2>
+            <form id="offer-form">
+                
+                <div class="form-group">
+                    <label for="fullName">Teljes név:</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Pl. Minta Jakab" required>
+                    <span class="error-message" id="error-fullName"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail cím:</label>
+                    <input type="email" id="email" name="email" placeholder="Pl. minta@email.com" required>
+                    <span class="error-message" id="error-email"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telefonszám:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Pl. +36 20 123 4567" required>
+                    <span class="error-message" id="error-phone"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="eventDate">Kívánt időpont:</label>
+                    <input type="date" id="eventDate" name="eventDate" required>
+                    <span class="error-message" id="error-eventDate"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="shootType">Fotózás típusa:</label>
+                    <select id="shootType" name="shootType" required>
+                        <option value="">-- Válassz típust --</option>
+                        <option value="portrait">Portré</option>
+                        <option value="wedding">Esküvő</option>
+                        <option value="event">Esemény</option>
+                        <option value="family">Családi</option>
+                    </select>
+                    <span class="error-message" id="error-shootType"></span>
+                </div>
+
+                <div class="form-group"> 
+    
+                    <label>Munkavégzés helye:</label>
+                    
+                    <div class="radio-options-container"> 
+                    
+                        <div class="radio-option">
+                            <input type="radio" id="studio" name="location" value="studio" required>
+                            <label for="studio">Stúdió</label>
+                        </div>
+                        
+                        <div class="radio-option">
+                            <input type="radio" id="outdoor" name="location" value="outdoor">
+                            <label for="outdoor">Kültér</label>
+                        </div>
+                        
+                        <div class="radio-option">
+                            <input type="radio" id="otherLocation" name="location" value="other-location"> 
+                            <label for="otherLocation">Külsős helyszín</label>
+                        </div>
+                        
+                    </div>
+                    
+                    <span class="error-message" id="error-location"></span>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Részletes üzenet:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <span class="error-message" id="error-message"></span>
+                </div>
+
+                <button type="submit" class="btn">Ajánlatot kérek</button>
+            </form>
+        </section>
+    </main>
+
+    <footer> <p>&copy; 2025 Mézes Márton Photography. Minden jog fenntartva.</p></footer>
+
+</body>
+</html>
